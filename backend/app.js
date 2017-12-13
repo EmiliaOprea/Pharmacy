@@ -32,7 +32,7 @@ var medicament= require('./src/rest/medicament);
 var client = require('./src/rest/client);
 var reteta= require('./src/rest/reteta);
 var vanzare=require('./src/rest/vanzare);
-var bon=require('./src/rest/bon);
++var bon=require('./src/rest/bon);
                         
 app.use('/',index);
 app.use('/user', user);
@@ -41,7 +41,7 @@ app.use('/medicament', medicament);
 app.use('/client', client);
 app.use('/reteta', reteta);
 app.use('/vanzare', vanzare);
-app.use('/bon',bon);
++app.use('/bon',bon);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

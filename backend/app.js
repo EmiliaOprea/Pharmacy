@@ -28,6 +28,21 @@ var user = require('./src/rest/user');
 app.use('/api', index);
 app.use('/api/user', user);
 
+var medicament= require('./src/farmacie/medicament);
+var client = require('./src/farmacie/client);
+var reteta= require('./src/farmacie/reteta);
+var vanzare=require('./src/farmacie/vanzare);
+var bon=require('./src/farmacie/bon);
+                        
+app.use('/',index);
+app.use('/user', user);
+
+app.use('/medicament', medicament);
+app.use('/client', client);
+app.use('/reteta', reteta);
+app.use('/vanzare', vanzare);
+app.use('/bon',bon);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

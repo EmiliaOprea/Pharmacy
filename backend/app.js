@@ -28,11 +28,11 @@ var user = require('./src/rest/user');
 app.use('/api', index);
 app.use('/api/user', user);
 
-var medicament= require('./src/farmacie/medicament);
-var client = require('./src/farmacie/client);
-var reteta= require('./src/farmacie/reteta);
-var vanzare=require('./src/farmacie/vanzare);
-var bon=require('./src/farmacie/bon);
+var medicament= require('./src/rest/medicament);
+var client = require('./src/rest/client);
+var reteta= require('./src/rest/reteta);
+var vanzare=require('./src/rest/vanzare);
+var bon=require('./src/rest/bon);
                         
 app.use('/',index);
 app.use('/user', user);
